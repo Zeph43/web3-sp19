@@ -10,76 +10,204 @@
     <link rel="stylesheet" href="main.css">
     <title>1Min Design</title>
   
-  </head>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Shade|Cinzel+Decorative|Monofett|Monoton|UnifrakturMaguntia" rel="stylesheet">
+  
+    </head>
 
   <body>
 
     <div class="container">
 
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-white">
+      <div class="container">
+        <h1 class="display-1">1min Design.<br> <span class="text-muted">If Only It Were That Easy.</span></h1>
+      </div>
+    </div>
+
     <!-- Three columns of text below the carousel -->
     <div class="row">
-      <div class="col-md-4 text-center text-md-left">
-        <svg class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      <div class="col-md-4 text-center">
+        <img src="img/ux.jpg" class="img-fluid img-thumbnail border-0" alt="Responsive image">
         <h2>Heading</h2>
         <p class="text-info"> Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        <p><a class="btn btn-warning" href="#" role="button">View details »</a></p>
+        <p><a class="btn btn-warning mb-3" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-md-4 text-center">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="img/ux.jpg" class="img-fluid img-thumbnail border-0" alt="Responsive image">
         <h2 mt-md-3>Heading</h2>
         <p class="text-warning">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <p><a class="btn btn-danger" href="#" role="button">View details »</a></p>
+        <p><a class="btn btn-danger mb-3" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-md-4 text-center text-md-right">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
+          <img src="img/ux.jpg" class="img-fluid img-thumbnail border-0" alt="Responsive image">
+          <h2>Heading</h2>
         <p class="text-success">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+        <p><a class="btn btn-primary mb-3" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
 
     <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider my-3">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <div class="row featurette flex-sm-row-reverse">
+        <div class="col-md-5">
+            <img src="img/user-vs-design.jpeg" class="img-fluid" width="500" height="500" alt="Responsive image"><text x="50%" y="50%" fill="#aaa" dy=".3em">User vs Design. Fight!</text>
+          </div>
+        <div class="col-md-7 mt-4">
+        <h2 class="featurette-heading">UX vs UI vs IA vs IxD.<br> <span class="text-muted">4 Confusing Design Terms Defined.</span></h2>
+        <p class="lead">Once upon a time, the word “design” overwhelmingly meant graphic design. But no longer. With new fields and job titles appearing on our ever-changing digital landscape, here’s a quick overview of 4 forms of design. </p>
+          <p class="lead"><em>[Keep in mind that the boundaries between each of these design roles are very fluid (e.g. IxD is quite similar to UX in its approach) so these roles often overlap.]</em></p>
+        <dl class="row">
+                <div class="col-3">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active bg-dark text-light" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">UX</a>
+                    <a class="nav-link text-muted" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">UI</a>
+                    <a class="nav-link text-muted" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">IA</a>
+                    <a class="nav-link text-muted" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">IxD</a>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active mb-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><p><mark>User Experience Design:</mark> concened with how a user feels about the product; it's all about research and testing; enhances user satisfaction by improving the usability, accessibility, and pleasure of user & product interactions; encompasses human–computer interaction design and extends it to address all aspects of a product/service as perceived by users.</p>
+                      <p><em><small>Deliverables: Wireframes, Prototypes, Storyboards, Sitemaps, Written specifications.</small></em></p>
+                    </div>
+                    <div class="tab-pane fade mb-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><p><mark>User Interface Design:</mark> What, where and how elements work on screen-based products; selecting the right interface elements and arranging them on the screen in a way that's readily understood and easily used; where UX Design is a more analytical and technical field, UI Design is closer to what we refer to as graphic design (sort of, anyway).</p>
+                      <p><em><small>Deliverables: text fields, radio buttons, dropdown lists, buttons, toggles, date field, breadcrumbs, sliders, search fields, icons, notifications, etc.</small></em></p>
+                    </div>
+                      <div class="tab-pane fade mb-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-settings-tab"><p><mark>Information architecture:</mark> Separating website/app content and dividing it into categories; structuring and organizing content in order for users to better understand where they are on a site/app.</p>
+                        <p><em><small>Deliverables: Site maps, Hierarchies, Categorizations, Navigation, Metadata.</small></em></p>
+                      </div>
+                      <div class="tab-pane fade mb-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-messages-tab"><p><mark>Interaction Design:</mark> Concerned with how the user and product/service act and react to one-another; defines the structure and behavior of interactive systems. Interaction Designers strive to create meaningful relationships between people and the products and services they use, from computers to mobile devices to appliances and beyond. IxD designers anticipate what users need (from first-timers to sophisticated experts), advocate for them and ensure that the final product surprises and delights them.</p>
+                      <p><em><small>Deliverables: User flows, Wireframes, User interface mockups and prototypes.</small></em></p>
+                    </div>
+                  </div>
+                </div>             
+            </dl>
+        </div>
       </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
 
-    <hr class="featurette-divider">
+      <hr class="featurette-divider my-3">
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <div class="row featurette">
+          <div class="col-md-5">
+              <img src="img/child-blocks.png" class="img-fluid" width="500" height="500" alt="Responsive image"><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+            </div>
+          <div class="col-sm-7 mt-4">
+          <h2 class="featurette-heading">Traits Of a Budding Designer.<br> <span class="text-muted">5 Things to Emphasize.</span></h2>
+          <p class="lead">At the 2014 IA Summit, Fred Beecher suggested that hiring managers focus more on traits than skills when interviewing entry-level UX designers.</p>
+          <p class="lead">If you're new to UX design, highlight these traits during the interview process.</p>
+          <ul>
+            <li>Passion for the craft</li>
+            <li>Curiosity about people and technology</li>
+            <li>Ability to learn quickly</li>
+            <li>Detail-oriented nature</li>
+            <li>Receptiveness to feedback (willingness to accept constructive criticism and act on it)</li>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+    
+      <hr class="featurette-divider my-3">
+  
+      <div class="row featurette flex-sm-row-reverse">
+          <div class="col-md-5">
+              <img src="img/newbie.jpg" class="img-fluid" width="500" height="500" alt="Responsive image"><text x="50%" y="50%" fill="#aaa" dy=".3em">The Town Of Newbies.</text>
+            </div>
+          <div class="col-sm-7 col-sm-mt-4">
+          <h2 class="featurette-heading mt-3">From Newbie to Expert.<br> <span class="text-muted">You Just Have To Put In the Work.</span></h2>
+          <p class="lead">From books, videos and podcasts to blogs and websites, there's plenty of information out there. So get going!</p>
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">TYPE</th>
+                  <th scope="col">LINK</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Curator of UX Content</td>
+                  <td><a href="https://uxdesign.cc/" target="blank">UX Collective</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Essential UX Books</td>
+                  <td><a href="https://uxdesign.cc/ux-books-on-user-research-strategy-2c8eeef820a8" target="blank">UX Books</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Recommended UX/UI Podcasts</td>
+                  <td><a href="https://uxdesign.cc/my-top-5-ux-ui-podcasts-3011f51017c9" target="blank">UX Podcasts</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Podcast</td>
+                    <td><a href="https://boagworld.com/show" target="blank">Boagworld</a></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">5</th>
+                      <td>UX/UI YouTube Channels</td>
+                      <td><a href="https://uxdesign.cc/the-best-youtube-channels-for-designers-and-developers-eda97b38d46a" target="blank">YouTube</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>UX research and consulting firm</td>
+                        <td><a href="https://www.nngroup.com/" target="blank">Nielsen Norman Group</a></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">7</th>
+                          <td>Blog</td>
+                          <td><a href="https://www.invisionapp.com/inside-design" target="blank">Inside Design</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Blog</td>
+                            <td><a href="https://learnui.design/blog/" target="blank">Learn UI Design</a></td>
+                          </tr>
+              </tbody>
+            </table>
       </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
+    
+              <div class="container mt-5">
+                  <!-- Content here -->
+                </div>
+                <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
+
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">1min Design</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../web3-wk2/index.html">Designers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropup">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown10">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
 
   </div>
 
