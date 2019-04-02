@@ -1,0 +1,72 @@
+
+  #animate1 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 5%;
+    background: cyan;
+  }
+
+  #animate2 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 10%;
+    background: goldenrod;
+  }
+
+  #animate3 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 15%;
+    background: red;
+  }
+
+  #animate4 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 20%;
+    background: green;
+  }
+
+  #animate5 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 25%;
+    background: purple;
+  }
+
+  #animate6 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 30%;
+    background: black;
+  }
+
+  #animate7 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 35%;
+    background: blue;
+  }
+
+  #animate8 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 40%;
+    background: hotpink;
+  }
+
+  #animate9 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 45%;
+    background: turquoise;
+  }
