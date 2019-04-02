@@ -73,6 +73,16 @@ p {
     opacity: 0.3;
 }
 
+.lots-of-text h1 {
+    color: antiquewhite;
+}
+
+
+.lots-of-text p {
+    color: antiquewhite;
+}
+
+
 #streetwear-tab {
     outline: none !important;
     box-shadow: none;
