@@ -47,7 +47,7 @@ h5 {
 
 .caption-overlay h5 {
     font-family: 'Tulpen One', cursive;
-    font-size: 5em;
+    font-size: 3em;
     color: antiquewhite;
     text-shadow: -.25px 0 black, 0 .25px black, .25px 0 black, 0 -.25px black;
     text-align: right;
@@ -100,6 +100,7 @@ a:hover {
 .article-image-tall {
     position: relative;
     width: 100%;
+    height: auto;
 }
 
 .caption-overlay-bg {
@@ -148,7 +149,7 @@ a:hover {
 }
 
 .nameplate {
-    height: 41.3em;
+    height: 43em;
     text-align: center;
 }
 
@@ -203,6 +204,12 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+
+    .caption-overlay h5 {
+        font-size: 5em;
+    }
+    
+
 .carousel-caption {
     height: 100%;
     width: 100%;
@@ -219,6 +226,12 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
+
+    .caption-overlay h5 {
+        font-size: 5em;
+    }
+
+
 .carousel-caption {
     height: 100%;
     width: 100%;
@@ -234,6 +247,12 @@ footer {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+    .caption-overlay h5 {
+        font-size: 5em;
+    }
+
+
 
 .carousel-caption {
     height: 100%;
