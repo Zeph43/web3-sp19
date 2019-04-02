@@ -73,6 +73,21 @@ p {
     opacity: 0.3;
 }
 
+#streetwear-tab {
+    outline: none !important;
+    box-shadow: none;
+}
+
+#workwear-tab {
+    outline: none !important;
+    box-shadow: none;
+}
+
+#formalwear-tab {
+    outline: none !important;
+    box-shadow: none;
+}
+
 th {
     font-family: 'Nunito Sans', sans-serif;
 }
