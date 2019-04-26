@@ -1,0 +1,260 @@
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: whitesmoke;
+}
+
+h6 {
+    font-family: 'Press Start 2P', cursive;
+    color: whitesmoke;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    height: 700px;
+    z-index: 1005;
+    background-image: url("assets/pong-background.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100%;
+}
+
+.row {
+    padding-top: 1em;
+    height: 700px;
+}
+
+.col-3{
+    height: 100%;
+}
+
+.col-2{
+    height: 100%;
+}
+
+.ball {
+    position: relative;
+    height: .5em;
+    width: .5em;
+    background-color: white;
+    animation-name: ball-bounce;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.paddle-left {
+    position: relative;
+    float: left;
+    height: 2em;
+    width: .5em;
+    background-color: white;
+    margin-left: 2em;
+    animation-name: paddlel;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+/* animation: [name] [duration] [time-function] [delay] [iteration-count] [fill-mode] [play-state]; 
+    animation: paddlel 2s ease-in-out 0s infinite normal fowards paused*/
+
+.paddle-right {
+    position: relative;
+    float: right;
+    height: 2em;
+    width: .5em;
+    background-color: white;
+    margin-right: 2em;
+    animation-name: paddler;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball-bounce {
+    0% {
+        top: 0px;
+        left: 50px;
+    }
+    10% {
+        top: 500px;
+        left: -442px;
+    }
+    15% {
+        top: 0px;
+        left: 200px;
+    }
+    18% {
+        top: 200px;
+        left: 590px;
+    }
+    25% {
+        top: 600px;
+        left: -442px;
+    }
+    35% {
+        top: 200px;
+        left: 590px;
+    }
+    45% {
+        top: 100px;
+        left: -442px;
+    }
+    50% {
+        top: 600px;
+        left: 50px;
+    }
+    55% {
+        top: 300px;
+        left: 590px;
+    }
+    60% {
+        top: 0px;
+        left: -150px;
+    }
+    65% {
+        top: 300px;
+        left: -442px;
+    }
+    70% {
+        top: 600px;
+        left: 400px;
+    }
+    72% {
+        top: 500px;
+        left: 590px;
+    }
+    82% {
+        top: 100px;
+        left: -442px;
+    }
+    95% {
+        top: 300px;
+        left: 590px;
+    }
+    100% {
+        top: 0px;
+        left: 50px;
+    }
+}
+
+@keyframes paddlel {
+    0% {
+        top: 200px;
+    }
+    5% {
+        top: 350px;
+    }
+    10% {
+        top: 500px;
+    }
+    15% {
+        top: 100px;
+    }
+    22% {
+        top: 100px;
+    }
+    25% {
+        top: 600px;
+    }
+    30% {
+        top: 400px;
+    }
+    35% {
+        top: 400px;
+    }
+    40% {
+        top: 30px;
+    }
+    45% {
+        top: 80px;
+    }
+    50% {
+        top: 500px;
+    }
+    55% {
+        top: 100px;
+    }
+    65% {
+        top: 300px;
+    }
+    70% {
+        top: 550px;
+    }
+    70% {
+        top: 600px;
+    }
+    82% {
+        top: 80px;
+    }
+    90% {
+        top: 120px;
+    }
+    95% {
+        top: 400px;
+    }
+    100% {
+        top: 200px;
+    }
+}
+
+@keyframes paddler {
+    0% {
+        top: 300px;
+    }
+    7% {
+        top: 200px;
+    }
+    10% {
+        top: 400px;
+    }
+    15% {
+        top: 100px;
+    }
+    20% {
+        top: 200px;
+    }
+    25% {
+        top: 600px;
+    }
+    30% {
+        top: 300px;
+    }
+    35% {
+        top: 200px;
+    }
+    40% {
+        top: 200px;
+    }
+    45% {
+        top: 200px;
+    }
+    50% {
+        top: 600px;
+    }
+    55% {
+        top: 300px;
+    }
+    60% {
+        top: 200px;
+    }
+    65% {
+        top: 300px;
+    }
+    72% {
+        top: 500px;
+    }
+    82% {
+        top: 600px;
+    }
+    90% {
+        top: 120px;
+    }
+    95% {
+        top: 290px;
+    }
+    100% {
+        top: 300px;
+    }
+}
