@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Bungee|Unica+One|Lato|Montserrat" rel="stylesheet">    
+
+    <title>Canvas exploration</title>
+  </head>
+  <body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">The Art of <br>Jamie Hewlett</h1>
+          <p class="lead">Meet the artist behind <em>Tank Girl</em>  and the Gorillaz.</p>
+        </div>
+      </div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+                <canvas id="leftCanvas">
+                Your browser does not support the canvas element.
+                </canvas>
+                
+                
+            </div>
+            <div class="col text-center">
+                <img id="tankGirl" src="assets/tank-girl-puff.png" alt="Tank Girl">
+                
+                <canvas id="middleCanvas">
+                Your browser does not support the HTML5 canvas tag.
+                </canvas>
+                <button type="button" class="btn btn-outline-dark" onclick="theGallery()">The Gallery</button>
+                
+            </div>
+            <div class="col">
+                <canvas id="rightCanvas">
+                    Your browser does not support the canvas element.
+                    </canvas>
+                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        var canvas = document.getElementById("leftCanvas");
+        var ctx = canvas.getContext("2d");
+        // ctx.fillStyle = "#ffcc33";
+        // ctx.fillRect(0, 0, 300, 150);
+        ctx.moveTo(0, 75);
+        ctx.lineTo(300, 75);
+        ctx.stroke();
+        ctx.moveTo(150, 0);
+        ctx.lineTo(150, 150);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(90, 90, 60, 0, 1 * Math.PI);
+        ctx.stroke();        
+    </script>
+
+    <script>
+        function theGallery() {
+          var c = document.getElementById("middleCanvas");
+          var ctx = c.getContext("2d");
+          var img = document.getElementById("tankGirl");
+          ctx.drawImage(img, 5, 2.5, 290, 144);
+        }
+    </script>
+                
+    <script>
+        var canvas = document.getElementById("rightCanvas");
+        var ctx = canvas.getContext("2d");
+        // ctx.fillStyle = "#66ccff";
+        // ctx.fillRect(0, 0, 300, 150);
+        ctx.moveTo(0, 75);
+        ctx.lineTo(300, 75);
+        ctx.stroke();
+        ctx.moveTo(150, 0);
+        ctx.lineTo(150, 150);
+        ctx.stroke();
+        ctx.moveTo(250, 0);
+        ctx.lineTo(250, 150);
+        ctx.stroke();
+    </script>
+
+   </body>
+</html>
