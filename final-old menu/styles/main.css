@@ -1,0 +1,441 @@
+h1 {
+    font-family: 'Tulpen One', cursive;
+}
+
+.nameplate h1 {
+    font-family: 'Megrim', cursive;
+    color: antiquewhite;
+    font-size: 5em;
+}
+
+.nameplate-sm h1 {
+    font-family: 'Megrim', cursive;
+    color: antiquewhite;
+    margin-top: -1.5em;
+    font-size: 2em;
+}
+
+footer h1 {
+    font-size: 1.5em;
+    color: antiquewhite;
+}
+
+footer p {
+    font-size: .8em;
+    color: antiquewhite;
+}
+
+h2 {
+    font-family: 'Tulpen One', cursive;
+    font-size: 3em
+}
+
+h4 {
+    font-family: 'Tulpen One', cursive;
+    font-size: 5em;
+    color: rgba(250, 235, 215, 1);
+}
+
+h5 {
+    font-family: 'Tulpen One', cursive;
+    font-size: 3em;
+
+}
+
+.caption-overlay h5 {
+    font-family: 'Tulpen One', cursive;
+    font-size: 3em;
+    color: antiquewhite;
+    text-shadow: -.25px 0 black, 0 .25px black, .25px 0 black, 0 -.25px black;
+    text-align: right;
+}
+
+
+.card-body h5 {
+    margin-bottom: 0em;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.nameplate p {
+    font-family: 'Megrim', cursive;
+    color: antiquewhite;
+    opacity: 0.3;
+    padding-bottom: 10em;
+}
+
+.nameplate-sm p {
+    font-family: 'Megrim', cursive;
+    color: antiquewhite;
+    opacity: 0.3;
+}
+
+.lots-of-text h1 {
+    color: antiquewhite;
+}
+
+
+.lots-of-text p {
+    color: antiquewhite;
+}
+
+
+#streetwear-tab {
+    outline: none !important;
+    box-shadow: none;
+}
+
+#workwear-tab {
+    outline: none !important;
+    box-shadow: none;
+}
+
+#formalwear-tab {
+    outline: none !important;
+    box-shadow: none;
+}
+
+th {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+td {
+    font-family: 'Nunito Sans', sans-serif;
+    color: antiquewhite;
+}
+
+.nav-link {
+    color: antiquewhite;
+}
+
+.card-body .nav-link {
+    color: slategray;
+}
+
+a:hover {
+    color: antiquewhite;
+    opacity: 0.7;
+}
+
+.fade-up {
+    animation-name: fadeUp;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode:forwards;
+}
+
+.fade-eye {
+    opacity: 0;
+    animation-name: fadeEye;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode:forwards;
+}
+
+.fade-to {
+    animation-name: fadeTo;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode:forwards;  
+}
+
+.nav-fade {
+    opacity: 0;
+    animation-name: navFade;
+    animation-delay: 2.5s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navFade {
+    0% {
+        opacity: 0;    
+    }
+    100% {
+        opacity: 1;    
+    }
+
+}
+
+@keyframes fadeUp {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+        opacity: .6;
+      }
+    }
+
+@keyframes fadeEye {
+    0% {
+      opacity: 0;
+
+    }
+    30% {
+        opacity: .6;
+    }
+    100% {
+        opacity: .6;
+      }
+    }
+
+@keyframes fadeTo {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    70% {
+        opacity: 0.2;
+      }
+    100% {
+        opacity: 0.2;
+      }
+    }
+  
+
+    
+.article-image-tall {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.caption-overlay-bg {
+    position: absolute;
+    bottom: 0em;
+    left: 0em;
+    width: 100%;
+    height: 33%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.caption-overlay {
+    position: absolute;
+    bottom: 0em;
+    width: 100%;
+    height: 20%;
+}
+
+.lots-of-text {
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.card-header {
+    background-color: transparent;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid antiquewhite;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.navbar-toggler {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.jumbotron {
+    background-color: black;
+}
+
+.nameplate {
+    height: 35vw;
+    margin-top: 10vw;
+    text-align: center;
+}
+.nameplate::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuNCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI5NC42N3B4IiBoZWlnaHQ9Ijk0LjY3cHgiIHZpZXdCb3g9IjAgMCA5NC42NyA5NC42NyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOTQuNjcgOTQuNjciIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNOTQuNjcsMjYuNzc2TDQ3LjMzNSw2OS4zOEwwLDI2Ljc3NmwxLjMzOC0xLjQ4Nmw0NS45OTcsNDEuMzk2bDQ1Ljk5Ny00MS4zOTZMOTQuNjcsMjYuNzc2eiIvPgo8L3N2Zz4=");    
+    background-size: contain;
+    animation-name: fade-bounce;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2.8s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes fade-bounce {
+    0% {
+        transform: translate(0, 0);
+        opacity: .4;
+    }
+    20% {
+        transform: translate(0, 0);
+    }    
+    40% {
+        transform: translate(0, -30px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    60% {
+        transform: translate(0, -15px);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: .4;
+    }
+    }
+    
+.nameplate-sm {
+    text-align: center;
+    padding-top: 1vw;
+}
+
+.btn-primary {
+    color: antiquewhite;
+    background-color: transparent;
+    border-color: antiquewhite;
+  }
+
+.btn-primary:hover {
+    color: #212529;
+    background-color: antiquewhite;
+    border-color: #212529;
+}
+
+.form-inline .btn {
+    color: antiquewhite;
+    background-color: transparent;
+    border-color: antiquewhite;
+}
+
+.form-inline .btn:hover {
+    color: black;
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+}
+
+footer {
+    background-color: black;
+}
+
+.button-simple {
+    text-align: left;
+    vertical-align: top;
+    border: 0px;
+    padding: 0rem 0rem;
+    font-size: 1rem;
+    line-height: 0;
+    border-radius: .25rem;}
+
+.spacer {
+    height: 3.2em;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+    .caption-overlay h5 {
+        font-size: 5em;
+    }
+    
+
+.carousel-caption {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 17em;
+    background-color: black;
+    opacity: 0.4;
+    text-align: center;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+    .caption-overlay h5 {
+        font-size: 5em;
+    }
+
+
+.carousel-caption {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 21em;
+    background-color: black;
+    opacity: 0.4;
+    text-align: center;
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .caption-overlay h5 {
+        font-size: 5em;
+    }
+
+
+
+.carousel-caption {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 25em;
+    background-color: black;
+    opacity: 0.4;
+    text-align: center;
+}
+    
+}
+
+/* font-family: 'Megrim', cursive;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Gruppo', cursive;
+font-family: 'Forum', cursive;
+font-family: 'Tulpen One', cursive;
+font-family: 'Bungee Hairline', cursive;
+*/
