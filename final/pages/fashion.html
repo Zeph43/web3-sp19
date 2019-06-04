@@ -10,7 +10,7 @@
 
 
 		<!--favicon-->
-		<head profile="http://www.w3.org/2005/10/profile"/>
+		<head profile="http://www.w3.org/2005/10/profile">
 			<link rel="icon" 
       		type="image/png" 
       		href="../assets/logo-icon.png" alt="Chameleon roundel icon"/>
@@ -57,8 +57,49 @@
 
   <body>
     <header>
-    </header>
+      <nav class="navbar fixed-top">
+  
+          <ul class="nav justify-content-center topnav-adjust">
+              <li class="nav-item">
+                <a class="nav-link topnav-link-left" href="fashion.html">FASHION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link topnav-link-left" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link nav-home" href="../index.html">CHAMELEON</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link topnav-link-right" href="stories/html">STORIES</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link topnav-link-right" href="contact.html">CONTACT</a>
+              </li>
+              </ul>
 
+        
+      <div class="hamburger">
+        <div class="line top"></div>
+        <div class="line center"></div>
+        <div class="line bottom"></div>
+      </div>
+  
+      <div class="menu">
+        <ul class="menu-item">
+          <li class="menu-home"><a href="../index.html">CHAMELEON</a></li>
+          <li class="menu-link"><a href="fashion.html">Fashion</a></li>
+          <li class="menu-link"><a href="about.html">About</a></li>
+          <li class="menu-link"><a href="stories/html">Stories</a></li>
+          <li class="menu-link"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="shopping-bag">
+          <button type="button" class="btn btn-link"><img class="my-cart-icon" src="../assets/shopping-bag.svg" width="23" height="23" alt="">
+            <span class="badge badge-danger my-cart-badge">1</button>
+      </div>
+    </nav>
+  
     <main>
       <!-- jumbotron -->
       <div class="jumbotron jumbotron-fluid nameplate-sm mb-0 pb-0">
@@ -115,7 +156,7 @@
                         <div class="card-body pt-3">
                           <h5 class="card-title">Serial Spring</h5>
                           <p class="card-text text-muted">$1700</p>
-                          <p class="card-text add-to-cart">Add to cart</p>
+                          <button type="button" class="btn btn-link my-cart-btn" data-id="1" data-name="Serial Spring" data-price="$1700" data-quantity="1" data-image="../assets/fashion-street-22.png"><p class="card-text add-to-cart black-link">ADD TO CART</p></button>
                         </div>
                       </div>
   
@@ -502,96 +543,16 @@
     </div>
 </main>
 
-<footer>
-
-  <div class="container-fluid">
-    <div class="row pt-2 text-center px-3">
-
-        <div class="col-4">
-        <h1 class="mt-4 mb-3">THE COMPANY</h1>
-        <p>About Chameleon</p>
-        <p>Careers</p>
-        <p>Legal</p>
-        <p class="mb-5">Privacy & Cookies</p>
-      </div>
-
-      <div class="col-4">
-        <h1 class="mt-4 mb-3">HELP</h1>
-        <p>FAQs</p>
-        <p>Contact Us</p>
-        <button type="button" class="btn btn-link button-simple my-2" data-toggle="modal" data-target="#modalSizing">
-          <p>Sizing</p>
-        </button>
-        <p class="mb-5">Returns & Exchanges</p>
-      </div>
-
-      <div class="col-4">
-        <h1 class="mt-4 mb-3">MAILING LIST</h1>
-        <button type="button" class="btn btn-link button-simple my-2" data-toggle="modal" data-target="#modalSubscribe">
-          <p>Subscribe</p>
-        </button>
-        <p>Unsubscribe</p>
-        <p class="mb-5">Contact Us</p>
-      </div>
-
-    </div>
-
-      <div class="row">
-      <div class="col spacer">
-
-      </div>
-    </div>
-  </div>
-        <nav class="navbar navbar-dark  navbar-expand-sm fixed-bottom">
-            <button class="navbar-toggler ml-auto border-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand">
-                  <a href="../index.html"><img src="../assets/logo-icon.png" width="30" height="30" alt=""></a>
-                </a>
-                <ul class="navbar-nav mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link disabled pl-3 pl-md-4" href="#" tabindex="-1" aria-disabled="true">Fashion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pl-3" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pl-3" href="about.html#designers">Designers</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>    
-      </footer>
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<script>
-$("#nav-tabs li").click(function () {
-  if (window.location.hash) {
-        var wndHash = window.location.hash;
-        var tab = wndHash + "Tab";
-        // if hash exist on doc ready then remove class "active" from all tabs        
-        $("#tabs li").removeClass('active');
-        // show the tab content and make tab list item (li) active
-        $(wndHash).fadeIn();            
-        $(tab).parent().addClass("active");
-        console.log(wndHash, $(wndHash), tab, $(tab));
-    } else {
-        // if no hash make the BeforeTab active
-        $("#streetwear").fadeIn();            
-        $("#streetwear-tab").parent().addClass("active");
-    }}
-</script>
-
-
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/jquery-2.2.3.min.js"></script>
+    <script src="../scripts/jquery.mycart.js"></script>
+    <script src="../scripts/jquery.mycart.min.js"></script>
 
   </body>
 

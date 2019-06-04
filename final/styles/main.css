@@ -119,6 +119,7 @@ body {
 a {
     color: antiquewhite;
     opacity: 0.7;
+    text-decoration: none;
 }
 
 a:hover {
@@ -126,6 +127,15 @@ a:hover {
     opacity: 1;
     text-decoration: none;
 }
+
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
 
 .hamburger .top.hamburger-top{
 	transform: translateY(200%) rotate(153deg);
@@ -414,7 +424,21 @@ td {
 }
 
 .add-to-cart {
-    
+
+}
+
+.card .btn {
+    padding: 0;
+    font-size: .8rem;
+}
+
+.black-link { 
+    color: #383838;
+    text-decoration: none;
+   }
+
+.black-link:visited {
+    color: #383838;
 }
 
 .form-control {
@@ -530,6 +554,30 @@ footer {
     height: 3.2em;
 }
 
+/* FOR CART BADGE*/
+
+.modal {
+    margin-top: 100px;
+    z-index: 9999;
+}
+
+.table {
+    display: block;
+    padding: inherit;
+}
+
+.badge-notify{
+    background:red;
+    position:relative;
+    top: 20px;
+    right: 20px;
+}
+
+.my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+  }
+  
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
