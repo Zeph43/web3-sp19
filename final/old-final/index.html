@@ -70,7 +70,7 @@
                   <a class="nav-link nav-home nav-fade" href="index.html">CHAMELEON</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-fade topnav-link-right" href="pages/features.html">FEATURES</a>
+                  <a class="nav-link nav-fade topnav-link-right" href="pages/stories/html">STORIES</a>
                 </li>
               <li class="nav-item">
                 <a class="nav-link nav-fade topnav-link-right" href="pages/contact.html">CONTACT</a>
@@ -89,19 +89,39 @@
           <li class="menu-home"><a href="index.html">CHAMELEON</a></li>
           <li class="menu-link"><a href="pages/fashion.html">Fashion</a></li>
           <li class="menu-link"><a href="pages/about.html">About</a></li>
-          <li class="menu-link"><a href="pages/features.html">Features</a></li>
+          <li class="menu-link"><a href="pages/stories/html">Stories</a></li>
           <li class="menu-link"><a href="pages/contact.html">Contact</a></li>
         </ul>
       </div>
-
-      <a href="pages/shopping-bag.html">
-        <div class="shopping-bag fade-up">          
-            <span class="badge black" id="count-cart"></span>
-        </div>
-      </a>
-  </nav>
   
-
+      <div class="shopping-bag">
+          <a href="index.html"><img class="nav-fade my-cart-icon" src="assets/shopping-bag.svg" width="23" height="23" alt=""></a>
+          <li class="badge badge-notify my-cart-badge"></li>
+      </div>
+    </nav>
+  
+<!--          <nav class="navbar navbar-dark  navbar-expand-sm fixed-bottom">
+            <button class="navbar-toggler ml-auto border-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                <a class="navbar-brand">
+                  <a href="index.html"><img class="nav-fade" src="assets/logo-icon.png" width="30" height="30" alt=""></a>
+                </a>
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item nav-fade">
+                        <a class="nav-link pl-3 pl-md-4" href="pages/fashion.html">Fashion</a>
+                    </li>
+                    <li class="nav-item nav-fade">
+                        <a class="nav-link pl-3" href="pages/about.html">About</a>
+                    </li>
+                    <li class="nav-item nav-fade">
+                        <a class="nav-link pl-3" href="pages/about.html#designers">Designers</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>    
+      -->
     </header>
 
     <main>
@@ -129,7 +149,7 @@
               <img src="assets/carousel-bubble.jpg" class="carousel-overlay d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h4 class="mb-0">See what's new in the spring collection</h4>
-                <a href="pages/features.html" class="btn btn-primary">Discover</a>
+                <a href="pages/fashion.html" class="btn btn-primary">Discover</a>
               </div>
             </div>
             
@@ -185,11 +205,32 @@
           </div>
         </div>
 
+        <div class="row">
+            <div class="col">
+                <div class="article-image-tall">
+                    <img src="assets/hats.png" class="img-fluid" alt="...">
+                    <div class="caption-overlay text-light px-4">
+                      <h5>HEAD</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row mt-3">
             <div class="col">
                 <div class="article-image-tall">
                     <img src="assets/doggie-head-wide.png" class="img-fluid" alt="...">
                     <div class="caption-overlay text-center text-light px-4">
+                      <h5>2</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="article-image-tall">
+                    <img src="assets/runway-feet-2.png" class="img-fluid contain" alt="...">
+                    <div class="caption-overlay text-center text-light px-4">
+                      <h5>TOE</h5>
                     </div>
                 </div>
             </div>
@@ -261,6 +302,50 @@
 
 </main>
 
+<!--
+<footer>
+
+  <div class="container-fluid mt-5">
+    <div class="row pt-2 text-center px-3">
+
+        <div class="col-4">
+        <h1 class="mt-4 mb-3">THE COMPANY</h1>
+        <p>About Chameleon</p>
+        <p>Careers</p>
+        <p>Legal</p>
+        <p class="mb-5">Privacy & Cookies</p>
+      </div>
+
+      <div class="col-4">
+        <h1 class="mt-4 mb-3">HELP</h1>
+        <p>FAQs</p>
+        <p>Contact Us</p>
+        <button type="button" class="btn btn-link button-simple my-2" data-toggle="modal" data-target="#modalSizing">
+          <p>Sizing</p>
+        </button>
+        <p class="mb-5">Returns & Exchanges</p>
+      </div>
+
+      <div class="col-4">
+        <h1 class="mt-4 mb-3">MAILING LIST</h1>
+        <button type="button" class="btn btn-link button-simple my-2" data-toggle="modal" data-target="#modalSubscribe">
+          <p>Subscribe</p>
+        </button>
+        <p>Unsubscribe</p>
+        <p class="mb-5">Contact Us</p>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col spacer">
+    </div>
+
+  </div>
+
+      </footer>
+-->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS, then mine-->
@@ -268,12 +353,94 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
-
-    <script src="scripts/shoppingCart.js"></script>
-
-
+    <script src="js/jquery.mycart.js"></script>    
   </body>
 
+  <!-- Modal Subscribe -->
+  <div class="modal fade" id="modalSubscribe" tabindex="-1" role="dialog" aria-labelledby="modalSubscribeTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title" id="modalSubscribeTitle">Subscribe</h1>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="form3" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="form3">Your name</label>
+          </div>
+  
+          <div class="md-form mb-4">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="form2" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="form2">Your email</label>
+          </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+<!-- Modal Sizing -->
+<div class="modal fade" id="modalSizing" tabindex="-1" role="dialog" aria-labelledby="modalSizingTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title" id="modalSizingTitle">Sizing</h1>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="modal-body mx-3">
+              <table class="table table-sm table-striped table-dark text-center">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">SMALL</th>
+                          <th scope="col">MEDIUM</th>
+                          <th scope="col">LARGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">SLEEVE</th>
+                          <td>33-34</td>
+                          <td>34-35</td>
+                          <td>35-36</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHEST</th>
+                          <td>35-38</td>
+                          <td>39-41</td>
+                          <td>42-45</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">WAIST</th>
+                          <td>28-30</td>
+                          <td>31-33</td>
+                          <td>34-36</td>
+                        </tr>
+                          <th scope="row">INSEAM</th>
+                          <td>28-30</td>
+                          <td>29-32</td>
+                          <td>32-34</td>
+                        </tr>
+                      </tbody>
+                    </table>            </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   
 
 </html>

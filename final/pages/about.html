@@ -10,11 +10,10 @@
 
 
 		<!--favicon-->
-		<head profile="http://www.w3.org/2005/10/profile">
+		<profile="http://www.w3.org/2005/10/profile">
 			<link rel="icon" 
       		type="image/png" 
-          href="../assets/logo-icon.png" alt="Chameleon roundel icon"/>
-    </head>
+      		href="../assets/logo-icon.png" alt="Chameleon roundel icon"/>
 		<!--end tab favicon-->
 
 		<!--
@@ -52,27 +51,79 @@
 
     <link href="https://fonts.googleapis.com/css?family=Gruppo|Megrim|Nunito+Sans|Bungee+Hairline|Forum|Tulpen+One" rel="stylesheet">
 
-    <title>Chameleon Fashion</title>
-
+    <title>Chameleon About</title>
+    
   </head>
 
   <body>
     <header>
-    </header>
+      <nav class="navbar fixed-top">
+  
+          <ul class="nav justify-content-center topnav-adjust">
+              <li class="nav-item">
+                <a class="nav-link topnav-link-left" href="fashion.html">FASHION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link topnav-link-left" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link nav-home" href="../index.html">CHAMELEON</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link topnav-link-right" href="features.html">FEATURES</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link topnav-link-right" href="contact.html">CONTACT</a>
+              </li>
+              </ul>
+
+        
+      <div class="hamburger">
+        <div class="line top"></div>
+        <div class="line center"></div>
+        <div class="line bottom"></div>
+      </div>
+  
+      <div class="menu">
+        <ul class="menu-item">
+          <li class="menu-home"><a href="../index.html">CHAMELEON</a></li>
+          <li class="menu-link"><a href="fashion.html">Fashion</a></li>
+          <li class="menu-link"><a href="about.html">About</a></li>
+          <li class="menu-link"><a href="features.html">Features</a></li>
+          <li class="menu-link"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <a href="shopping-bag.html">
+        <div class="shopping-bag">          
+            <span class="badge black" id="count-cart"></span>
+        </div>
+      </a>
+    </nav>
+  </header>
+
 
     <main>
+
       <!-- jumbotron -->
-      <div class="jumbotron jumbotron-fluid nameplate-sm mb-0 pb-0">
-        <div class="container">
-            <h1 class="display-4 mb-0 pb-0 pt-4 pt-sm-0 fade-up" style="display:inline">CHA</h1><h1 class="fade-to" style="display:inline">ME</h1><h1 class="fade-up" style="display:inline">LEON</h1>
-            <p class="lead fade-to">standing out while blending in.</p>
-          </div>
-        <div class="row">
-            <div class="col">
-                <img src="../assets/man-runway-mask-2.png" class="img-fluid" alt="...">
+    <div class="jumbotron jumbotron-fluid py-0">
+        <div class="container-fluid py-0 px-0 mx-0">
+        <!-- carousel -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+          <div class="carousel-inner">
+              <p class="lead fade-to">standing out while blending in.</p>
+                
+            <div class="carousel-item active">
+              <img src="../assets/man-runway-mask-2.png" class="carousel-overlay d-block w-100" alt="...">
             </div>
+          </div>
         </div>
+      </div>
     </div>
+
+
+
     <!-- end jumbotron -->
 
       <!-- start of container-fluid -->
@@ -90,19 +141,19 @@
         <div class="row py-3 pb-5">
           <div class="col-md-4 text-center">
             <h2>Conceal</h2>
-            <img class="rounded-circle my-1" src="../assets/conceal.png" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle my-1" src="../assets/conceal.png" alt="" width="140" height="140">
             <p class="pt-3 px-5">Headwear that obscures your eyes, nose-bridge, and head shape.</p>
           </div>
 
           <div class="col-md-4 text-center pt-5 pt-md-0">
             <h2>Reflect</h2>
-            <img class="rounded-circle my-1" src="../assets/reflect.png" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle my-1" src="../assets/reflect.png" alt="" width="140" height="140">
             <p class="pt-3 px-5">Metalliferous and microscopic glass fabrics reflect signals and flash photos.</p>
           </div>
 
           <div class="col-md-4 text-center pt-5 pt-md-0">
             <h2>Camouflage</h2>
-            <img class="rounded-circle my-1" src="../assets/camouflage.png" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle my-1" src="../assets/camouflage.png" alt="" width="140" height="140">
             <p class="pt-3 pb-5 px-5">Makeup that contrasts with your skin tone in unusual tones and directions.</p>
           </div>
         </div>
@@ -121,113 +172,61 @@
         </div>
 
         <div class="row">
-            <div class="col pb-5">
-              <div id="designers"></div>
+          <div class="col pb-5">
+            <div id="designers"></div>
               <h1 class="display-3 text-center pt-5">Designers.</h1>
-              <p class="lead text-center pt-3">These aren't your parents' designers.<br>These are designers for the future generation.</p>
+              <p class="lead text-center pt-3 mb-0">These aren't your parents' designers.<br>These are designers for the future generation.</p>
             </div>
           </div>
-  
-          
+        </div>
 
+        <div class="row mt-5">
+          <div class="col-1"></div>
+          <div class="col-lg-4 pb-5 mx-5">
+            <img src="../assets/designer-beirendonck.png" width="100%" alt="...">
+          </div>
+          <div class="col-lg-4 pb-5 mx-5">
+            <h5 class="featurette-name">Walter Van Beirendonck</h5>
+            <p class="mb-0">Since his early collections, Walter has been inspired  by art, music and literature, all mixed with ethnic and nature influences. Considered one of the main trend-setters 
+            in fashion, his designs are very recognizable by their strong graphics, innovating cuts and unexpected color combinations.
+            </p>
+          </div>
+          <div class="col-1"></div>
+        </div>
+
+        <hr class="featurette-divider mb-5">
 
         <div class="row">
-            <div class="col-12 pb-5">
-        <ul class="list-unstyled">
-            <li class="media">
-              <div class="media-body text-right">
-                <h5 class="mt-0">Walter Van Beirendonck</h5>
-                <p class="mb-0">Since his early collections, Walter has been inspired  by art, music and literature, all mixed with ethnic and nature influences. Considered one of the main trend-setters 
-                    in fashion, his designs are very recognizable by their strong graphics, innovating cuts and unexpected color combinations.
-                    </p>
-              </div>
-              <img src="../assets/designer-beirendonck.png" class="align-self-center ml-3" width="50%" alt="...">
-            </li>
-            <li class="media my-5 py-5">
-                <img src="../assets/designer-browne.png" class="align-self-center mr-3" width="50%" alt="...">
-                <div class="media-body text-left">
-                <h5 class="mt-0 mb-1">Thom Browne</h5>
-                <p class="mb-0">Browne grew up in Allentown, Pennsylvania, where he graduated from William Allen High School. He loved fashion and sports from a young age. Browne then attended the University of Notre Dame, living in Alumni Hall. He received a degree in economics and was a member of the swim team at the university.
-                    </p>
-              </div>
-            </li>
-            <li class="media">
-              <div class="media-body text-right">
-                <h5 class="mt-0 mb-1">Gareth Pugh</h5>
-                <p class="mb-0">Pugh's trademark is his experimentation with form and volume.He often uses nonsensically shaped, wearable sculptures to "distort the human body almost beyond recognition. Pugh describes his designs as being about the struggle between lightness and darkness.
-                    </p>
-              </div>
-              <img src="../assets/designer-pugh.png" class="image-fluid align-self-center ml-3" width="50%" alt="...">
-            </li>
-          </ul>  
+          <div class="col-1"></div>
+          <div class="col-lg-4 pb-5 mx-5">
+              <img src="../assets/designer-browne.png" width="100%" alt="...">
           </div>
+          <div class="col-lg-4 pb-5 mx-5">
+            <h5 class="featurette-name">Thom Browne</h5>
+            <p class="mb-0">Browne grew up in Allentown, Pennsylvania, where he graduated from William Allen High School. He loved fashion and sports from a young age. Browne then attended the University of Notre Dame, living in Alumni Hall. He received a degree in economics and was a member of the swim team at the university.
+            </p>
+          </div>
+          <div class="col-1"></div>
+        </div>
 
+        <hr class="featurette-divider mb-5">
+
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-lg-4 pb-5 mx-5">
+            <img src="../assets/designer-pugh.png" width="100%" alt="...">
+          </div>
+          <div class="col-lg-4 pb-5 mx-5">
+            <h5 class="featurette-name">Gareth Pugh</h5>
+            <p class="mb-0">Pugh's trademark is his experimentation with form and volume.He often uses nonsensically shaped, wearable sculptures to "distort the human body almost beyond recognition. Pugh describes his designs as being about the struggle between lightness and darkness.
+            </p>
+          </div>
+          <div class="col-1"></div>
+        </div>
 
 <!-- end container -->
 </div>
 </main>
-
-<footer>
-
-  <div class="container-fluid mt-5">
-    <div class="row pt-2 text-center px-3">
-
-        <div class="col-4">
-        <h1 class="mt-4 mb-3">THE COMPANY</h1>
-        <p>About Chameleon</p>
-        <p>Careers</p>
-        <p>Legal</p>
-        <p class="mb-5">Privacy & Cookies</p>
-      </div>
-
-      <div class="col-4">
-        <h1 class="mt-4 mb-3">HELP</h1>
-        <p>FAQs</p>
-        <p>Contact Us</p>
-        <button type="button" class="btn btn-link button-simple my-2" data-toggle="modal" data-target="#modalSizing">
-          <p>Sizing</p>
-        </button>
-        <p class="mb-5">Returns & Exchanges</p>
-      </div>
-
-      <div class="col-4">
-        <h1 class="mt-4 mb-3">MAILING LIST</h1>
-        <button type="button" class="btn btn-link button-simple my-2" data-toggle="modal" data-target="#modalSubscribe">
-          <p>Subscribe</p>
-        </button>
-        <p>Unsubscribe</p>
-        <p class="mb-5">Contact Us</p>
-      </div>
-
-    </div>
-    <div class="row">
-      <div class="col spacer">
-
-      </div>
-    </div>
-  </div>
-    <nav class="navbar navbar-dark  navbar-expand-sm fixed-bottom">
-        <button class="navbar-toggler ml-auto border-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
-            <a class="navbar-brand">
-              <a href="../index.html"><img src="../assets/logo-icon.png" width="30" height="30" alt=""></a>
-            </a>
-            <ul class="navbar-nav mt-2 mt-lg-0">
-                <li class="nav-item">
-                <a class="nav-link pl-3 pl-md-4" href="fashion.html">Fashion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled pl-3" href="#" tabindex="-1" aria-disabled="true">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link pl-3" href="#designers">Designers</a>
-                </li>
-            </ul>
-        </div>
-    </nav>    
-  </footer>
 
 
 
@@ -237,94 +236,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-</body>
+<script src="../scripts/main.js"></script>
 
-  <!-- Modal Subscribe -->
-  <div class="modal fade" id="modalSubscribe" tabindex="-1" role="dialog" aria-labelledby="modalSubscribeTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header text-center">
-            <h1 class="modal-title" id="modalSubscribeTitle">Subscribe</h1>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-        <div class="modal-body mx-3">
-          <div class="md-form mb-5">
-            <i class="fas fa-user prefix grey-text"></i>
-            <input type="text" id="form3" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="form3">Your name</label>
-          </div>
-  
-          <div class="md-form mb-4">
-            <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="email" id="form2" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="form2">Your email</label>
-          </div>
-  
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  
-<!-- Modal Sizing -->
-<div class="modal fade" id="modalSizing" tabindex="-1" role="dialog" aria-labelledby="modalSizingTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header text-center">
-            <h1 class="modal-title" id="modalSizingTitle">Sizing</h1>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-        <div class="modal-body mx-3">
-              <table class="table table-sm table-striped table-dark text-center">
-                      <thead>
-                        <tr>
-                          <th scope="col"></th>
-                          <th scope="col">SMALL</th>
-                          <th scope="col">MEDIUM</th>
-                          <th scope="col">LARGE</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">SLEEVE</th>
-                          <td>33-34</td>
-                          <td>34-35</td>
-                          <td>35-36</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CHEST</th>
-                          <td>35-38</td>
-                          <td>39-41</td>
-                          <td>42-45</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">WAIST</th>
-                          <td>28-30</td>
-                          <td>31-33</td>
-                          <td>34-36</td>
-                        </tr>
-                          <th scope="row">INSEAM</th>
-                          <td>28-30</td>
-                          <td>29-32</td>
-                          <td>32-34</td>
-                        </tr>
-                      </tbody>
-                    </table>            </div>
-  
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  
+<script src="../scripts/shoppingCart.js"></script>
+
+</body>
 
 
 </html>
