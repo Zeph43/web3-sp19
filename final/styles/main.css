@@ -1037,9 +1037,10 @@ ul {
 
 .nameplate {
     display: inline-block;
-    height: 37vw;
-    margin-top: 10vw;
+    height: 33vw;
+    margin-top: 28%;
 }
+
 
 .nameplate::before {
     display: flex;
@@ -1155,7 +1156,8 @@ ul {
 
 .nameplate {
     display: inline-block;
-    margin-top: 7vw;
+    height: 28vw;
+    margin-top: 20%;
 }
 
 .nameplate::before {
