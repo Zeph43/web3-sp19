@@ -9,26 +9,12 @@
 </head>
 
 <body>
-<!-- 
-    <div>
-        <p id="text1">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.            
-        </p>
-        <button id="button1_1" class="text-button">Change Me!</button>
-        <button id="button1_2" class="toggle-button">Hide/Show Me!</button>
-    </div>
-    <div>
-        <p id="text2">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...
-        </p>
-        <button id="button2_1" class="text-button">Change Me!</button>
-        <button id="button2_2" class="toggle-button">Hide Me!</button>
-    </div>
- -->
 
     <div class = "container-fluid">
         <div class = "row">
             <div class = "col">
-                <div id ="animate1"></div>
-                <div id ="animate2"></div>
+                <div id ="animate-me"></div>
+<!--                <div id ="animate2"></div>
                 <div id ="animate3"></div>
                 <div id ="animate4"></div>
                 <div id ="animate5"></div>
@@ -36,19 +22,37 @@
                 <div id ="animate7"></div>
                 <div id ="animate8"></div>
                 <div id ="animate9"></div>
+-->
             </div>
             <div class = "col">
-                    <p><button onclick = "myMove()">Move Us</button></p> 
+                    <p><button onclick = "myMove()">Move Me</button></p> 
             </div>
         </div>
     </div>
+
+    <div>
+        <p id="text1">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.            
+        </p>
+        <button id="button1_1" class="color-button">Color Me!</button>
+        <button id="button1_2" class="hide-button">Hide Me!</button>
+    </div>
+    <div>
+        <p id="text2">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...
+        </p>
+        <button id="button2_1" class="color-button">Color Me!</button>
+        <button id="button2_2" class="hide-button">Hide Me!</button>
+    </div>
     
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>
+
+
+
+<script>
         function myMove() {
-            var elem = document.getElementById("animate1"); 
+            var elem = document.getElementById("animate-me"); 
             var pos = 0;
-            var id = setInterval(frame, 5);
+            var id = setInterval(frame, 10);
             function frame() {
                 if (pos == 1450) {
                     clearInterval(id);
@@ -63,12 +67,31 @@
 
 
 </script>
-
     
-    
-    <script>
 
-// $(document).ready(function(){
+<script>
+        $(document).ready(function(){
+            $(".color-button").click(function(){
+                console.log(this);
+                var redVal = Math.random()*255;
+                var greenVal = Math.random()*255;
+                var blueVal = Math.random()*255;
+                $(this).siblings("p").css("background-color", "rgb("+redVal+", "+greenVal+", "+blueVal+")");
+            });
+
+            $(".hide-button").click(function(){
+                if($(this).siblings("p").css("display") === "none" ){
+                    $(this).text("Hide Me!");
+                }
+                else {
+                    $(this).text("Show Me!");
+                }
+                $(this).siblings("p").toggle();
+            });
+        });
+    </script>
+
+<!-- // $(document).ready(function(){
 
 // $(".text-button").click(function(){
 //     var redVal = Math.random()*255;
@@ -101,9 +124,8 @@
         // colorButton1.addEventListener("click", changeColor(text1));
         // colorButton2.addEventListener("click", changeColor(text2));
         // displayButton1.addEventListener("click", hideText(text1));
-        // displayButton2.addEventListener("click", hideText(text2));
+        // displayButton2.addEventListener("click", hideText(text2)); -->
  
-	// </script>
 </body>
 </html>
 
